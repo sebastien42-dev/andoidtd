@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">androidtd</string>
+    <string name="main_message">Salut ! Saisissez votre identifiant et mot de passe</string>
+    <string name="app_str_login">Identifiant</string>
+    <string name="app_str_pwd">Mot de passe</string>
+    <string name="dsh_str_title">Dashboard</string>
+    <string name="btn_str_validate">Valider</string>
+</resources>
