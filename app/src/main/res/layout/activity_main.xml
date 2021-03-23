@@ -23,7 +23,7 @@
         android:layout_marginTop="190dp"
         android:gravity="center"
         android:text="@string/main_message"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/purple_500"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -68,5 +68,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="500dp"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

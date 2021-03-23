@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Login"
+        android:id="@+id/menu_login"
+        app:showAsAction="never"/>
+    <item android:title="Dashboard"
+        android:id="@+id/menu_dsh"
+        app:showAsAction="never"/>
+    <item android:title="Users"
+        android:id="@+id/menu_users"
+        app:showAsAction="never"/>
+
+</menu>
