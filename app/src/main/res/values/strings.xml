@@ -4,5 +4,6 @@
     <string name="app_str_login">Identifiant</string>
     <string name="app_str_pwd">Mot de passe</string>
     <string name="dsh_str_title">Dashboard</string>
+    <string name="user_str_title">Utilisateurs</string>
     <string name="btn_str_validate">Valider</string>
 </resources>

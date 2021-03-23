@@ -2,6 +2,7 @@ package com.example.androidtd;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,18 +21,42 @@ public class Dashboard extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+    //retourne activity dashboard
+    public void goDsh() {
+        Intent goDashboard = new Intent(getApplicationContext(), Dashboard.class);
+        startActivity(goDashboard);
+        finish();
+    }
+
+    //retourne l'activity user
+    public void goUsers() {
+        Intent goUsers = new Intent(getApplicationContext(), Users.class);
+        startActivity(goUsers);
+        finish();
+    }
+
+    //retourne l'activity main
+    public void goLogin() {
+        Intent goMain = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(goMain);
+        finish();
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.menu_login:
-                Toast.makeText(this,"login choisi",Toast.LENGTH_SHORT).show();
+                this.goLogin();
+                break;
             case R.id.menu_dsh:
-                Toast.makeText(this,"dash choisi",Toast.LENGTH_SHORT).show();
+                this.goDsh();
+                break;
             case R.id.menu_users:
-                Toast.makeText(this,"users choisi",Toast.LENGTH_SHORT).show();
+                this.goUsers();
+                break;
             default:
                 return super.onOptionsItemSelected(item);
         }
+        return true;
     }
 }
