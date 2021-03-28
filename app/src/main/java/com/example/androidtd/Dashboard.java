@@ -6,14 +6,37 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 public class Dashboard extends AppCompatActivity {
+
+    private static final String TAG_NAME = "toto";
+    public TextView nomUser;
+    public ListView dataUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+       this.nomUser = (TextView) findViewById(R.id.nomUser);
+       this.dataUser = (ListView) findViewById(R.id.dataUser);
+
+        PasserelleApi api = new PasserelleApi();
+        api.WebService();
+
     }
 
     @Override

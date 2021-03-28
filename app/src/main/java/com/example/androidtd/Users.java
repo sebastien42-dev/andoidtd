@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 public class Users extends AppCompatActivity {
 
+    private String nom;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,5 +60,13 @@ public class Users extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    public String getNom() {
+        return this.nom;
+    }
+
+    public void setNom(String name) {
+        this.nom = name;
     }
 }
